@@ -14,14 +14,23 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    public Long getId() {return id;}
+
     @Column(nullable = false)
     private String name;
 
+    public String getName () {return name;}
+
     private String description;
+
+
+    public String getDescription () {return description;}
 
     @ManyToOne
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
+
+    public Teacher getTeacher() {return teacher;}
 
     @ManyToMany(mappedBy = "courses")
     private Set<Student> students = new HashSet<>();

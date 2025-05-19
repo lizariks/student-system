@@ -21,4 +21,12 @@ public class Group {
 
     @OneToMany(mappedBy = "group")
     private List<Student> students = new ArrayList<>();
+
+    public String getName() {
+        return groupName;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
