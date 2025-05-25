@@ -52,9 +52,6 @@
                     <a class="nav-link active" href="/student/home">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/student/courses">My Courses</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/student/profile">Profile</a>
                 </li>
             </ul>
@@ -112,16 +109,10 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6 mb-2">
-                                <a href="/student/courses" class="btn btn-outline-primary w-100">View All Courses</a>
-                            </div>
-                            <div class="col-md-6 mb-2">
                                 <a href="/student/profile" class="btn btn-outline-primary w-100">Edit Profile</a>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <a href="/student/course/register" class="btn btn-outline-success w-100">Register for Courses</a>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <a href="/student/calendar" class="btn btn-outline-info w-100">View Schedule</a>
                             </div>
                         </div>
                     </div>

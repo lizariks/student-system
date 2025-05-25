@@ -43,7 +43,7 @@ public class Student implements UserDetailsBase {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         if (role == null) {
-            return Collections.emptyList(); // or throw an exception, if required
+            return Collections.emptyList();
         }
         return List.of(new SimpleGrantedAuthority("ROLE_" + role.name()));
     }

@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/student/home">Dashboard</a>
+                    <a class="nav-link" href="/student-home">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/student/courses">My Courses</a>
@@ -120,10 +120,8 @@
                     </div>
                     <div class="card-body">
                         <div class="list-group">
-                            <a href="/student/home" class="list-group-item list-group-item-action">Dashboard</a>
-                            <a href="/student/courses" class="list-group-item list-group-item-action">My Courses</a>
+                            <a href="/student-home" class="list-group-item list-group-item-action">Dashboard</a>
                             <a href="/student/course/register" class="list-group-item list-group-item-action">Register for Courses</a>
-                            <a href="/student/calendar" class="list-group-item list-group-item-action">Academic Calendar</a>
                         </div>
                     </div>
                 </div>
