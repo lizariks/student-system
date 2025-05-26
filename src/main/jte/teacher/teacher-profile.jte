@@ -20,11 +20,11 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-        <a class="navbar-brand" href="/teacher/home">Teacher Portal</a>
+        <a class="navbar-brand" href="/teacher-home">Teacher Portal</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="/teacher/home">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="/teacher/courses">My Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="/teacher-home">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/teacher/course">My Courses</a></li>
                 <li class="nav-item"><a class="nav-link active" href="/teacher/profile">Profile</a></li>
             </ul>
             <div class="d-flex">
@@ -75,9 +75,8 @@
                     </div>
                     <div class="card-body">
                         <div class="list-group">
-                            <a href="/teacher/home" class="list-group-item list-group-item-action">Dashboard</a>
-                            <a href="/teacher/courses" class="list-group-item list-group-item-action">My Courses</a>
-                            <a href="/teacher/schedule" class="list-group-item list-group-item-action">Schedule</a>
+                            <a href="/teacher-home" class="list-group-item list-group-item-action">Dashboard</a>
+                            <a href="/teacher/course" class="list-group-item list-group-item-action">My Courses</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +142,7 @@
                                 @for(Course course : teacher.getCourses())
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
                                         ${course.getName()}
-                                        <a href="/teacher/course/${course.getId()}" class="btn btn-sm btn-outline-dark">Manage</a>
+                                        <a href="/teacher/course" class="btn btn-sm btn-outline-dark">Manage</a>
                                     </li>
                                 @endfor
                             </ul>
