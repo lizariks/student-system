@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -9,115 +7,342 @@
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background-image: url(https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 section {
-    position: relative;
-    max-width: 500px; /* Adjust the max-width as needed */
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(55px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 3rem;
-    transition: all 0.5s ease-in-out;
-  }
-  
-
-h1 {
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
 }
-.inputbox {
-    position: relative;
-    margin: 20px 0; 
-    max-width: 550px;
-    border-bottom: 2px solid #fff;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .inputbox input {
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    padding: 0 35px 0 5px;
-    color: #fff;
-  }
-  
-  .inputbox ion-icon {
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2rem;
-    top: 12px;
-    transition: all 0.5s ease-in-out;
-  }
 
+form {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+form h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.inputbox {
+  position: relative;
+  margin: 25px 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.inputbox select {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 35px 0 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inputbox select option {
+  background: #333;
+  color: #fff;
+}
+
+.inputbox input::placeholder {
+  color: transparent;
+}
 
 .inputbox label {
   position: absolute;
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  color: #fff;
-  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
+  transition: 0.5s;
 }
 
-input:focus ~ label,
-input:valid ~ label {
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label,
+.inputbox select:focus ~ label,
+.inputbox select:valid ~ label {
   top: -5px;
-  font-size: 0.9rem;
-  color: #a8a8a8;
+  font-size: 12px;
+  color: #fff;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 15px;
+  font-size: 14px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.remember-forgot input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+  accent-color: #fff;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.remember-forgot a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 button {
   width: 100%;
-  height: 40px;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 1);
+  height: 50px;
+  border-radius: 25px;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
-  transition: all 0.4s ease;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 20px 0;
 }
 
 button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .register {
-  font-size: 0.9rem;
-  color: #fff;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  margin: 25px 0 10px;
-  transition: all 0.5s ease-in-out;
+  margin: 25px 0;
 }
 
-.register p a {
-  text-decoration: none;
+.register p {
+  margin-bottom: 10px;
+}
+
+.register a {
   color: #fff;
+  text-decoration: none;
   font-weight: 600;
-  transition: all 0.5s ease-in-out;
+  transition: 0.3s;
 }
 
-.register p a:hover {
-  text-decoration: underline;
-  color: #a8a8a8;
+.register a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.switch-form {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.switch-form a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.switch-form a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.signup-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.signup-option {
+  flex: 1;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.signup-option:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.success-message {
+  color: #51cf66;
+  background: rgba(81, 207, 102, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(81, 207, 102, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.debug-info {
+  background: rgba(248, 249, 250, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+
+  form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .inputbox {
+    margin: 20px 0;
+  }
+
+  .signup-options {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .remember-forgot {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  animation: slideIn 0.6s ease;
+}
+
+.inputbox input:focus,
+.inputbox select:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+button:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.inputbox select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.inputbox select::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.inputbox select::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.inputbox select::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }

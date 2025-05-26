@@ -15,16 +15,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .debug-info {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px 0;
-            font-family: monospace;
-            font-size: 12px;
-        }
-    </style>
 </head>
 <body>
 <section>

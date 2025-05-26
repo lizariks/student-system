@@ -6,7 +6,6 @@
 @param String error = null
 @param String success = null
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,15 +31,16 @@
                 ${success}
             </div>
         @endif
+
         <div class="inputbox">
             <ion-icon name="person-outline"></ion-icon>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" value="${teacher != null ? teacher.getFirstName() : ""}" required>
             <label for="firstName">First Name</label>
         </div>
 
         <div class="inputbox">
             <ion-icon name="person-outline"></ion-icon>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" id="lastName" name="lastName" value="${teacher != null ? teacher.getLastName() : ""}" required>
             <label for="lastName">Last Name</label>
         </div>
 
@@ -52,10 +52,9 @@
 
         <div class="inputbox">
             <ion-icon name="mail-outline"></ion-icon>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" value="${teacher != null ? teacher.getEmail() : ""}" required>
             <label for="email">Email</label>
         </div>
-
 
         <div class="inputbox">
             <ion-icon name="lock-closed-outline"></ion-icon>
@@ -68,7 +67,6 @@
             <input type="password" id="passwordcon" name="passwordcon" required>
             <label for="passwordcon">Confirm Password</label>
         </div>
-
 
         <button id="submit" type="submit">Sign Up as Teacher</button>
 
