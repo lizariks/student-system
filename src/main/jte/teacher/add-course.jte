@@ -28,7 +28,6 @@
     </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="/teacher-home">Teacher Portal</a>
@@ -94,7 +93,6 @@
                 </div>
             </div>
 
-            <!-- Help Section -->
             <div class="card mt-4">
                 <div class="card-header bg-info text-white">
                     <h5 class="card-title mb-0">Tips for Creating a Course</h5>

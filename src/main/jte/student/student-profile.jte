@@ -42,7 +42,6 @@
     </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
     <div class="container">
         <a class="navbar-brand" href="/student/home">Student Portal</a>
@@ -77,7 +76,6 @@
     </div>
 </nav>
 <div class="container">
-    <!-- Profile header section -->
     <div class="profile-header text-center">
         <h1>Student Profile</h1>
         <p class="lead">Manage your personal information</p>
@@ -89,7 +87,6 @@
             <a href="/auth/login" class="btn btn-primary">Login Again</a>
         </div>
     @else
-        <!-- Profile Information -->
         <div class="row">
             <div class="col-md-4">
                 <div class="card">

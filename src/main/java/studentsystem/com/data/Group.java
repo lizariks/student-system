@@ -29,7 +29,6 @@ public class Group {
         this.year = year;
     }
 
-    // Getters
     public Long getId() {
         return id;
     }

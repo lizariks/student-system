@@ -28,7 +28,6 @@
     </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="/teacher-home">Teacher Portal</a>
@@ -95,14 +94,12 @@
                 </div>
             </div>
 
-            <!-- Course Statistics -->
             <div class="card mt-4">
                 <div class="card-header bg-info text-white">
                     <h5 class="card-title mb-0">Course Statistics</h5>
                 </div>
             </div>
 
-            <!-- Danger Zone -->
             <div class="card mt-4 border-danger">
                 <div class="card-header bg-danger text-white">
                     <h5 class="card-title mb-0">Danger Zone</h5>

@@ -17,7 +17,6 @@
     </style>
 </head>
 <body>
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="/teacher-home">Teacher Portal</a>
@@ -82,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Right Column -->
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-dark text-white">

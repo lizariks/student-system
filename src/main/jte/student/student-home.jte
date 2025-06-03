@@ -39,7 +39,6 @@
     </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
     <div class="container">
         <a class="navbar-brand" href="/student/home">Student Portal</a>
@@ -71,7 +70,6 @@
     </div>
 </nav>
 <div class="container">
-    <!-- Welcome section -->
     <div class="welcome-section">
         <h2>Welcome to your Student Dashboard</h2>
         <p>Here you can manage your courses and view your academic information.</p>
@@ -120,7 +118,6 @@
             </div>
         </div>
 
-        <!-- Enrolled Courses -->
         <h3 class="mb-3">Your Enrolled Courses</h3>
         <div class="row">
             @if(student.getCourses() == null || student.getCourses().isEmpty())

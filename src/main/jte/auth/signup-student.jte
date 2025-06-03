@@ -33,7 +33,6 @@
             </div>
         @endif
 
-        <!-- Debug info - can be removed in production -->
         <div class="debug-info">
             <p>Student DTO present: ${student != null}</p>
             <p>Groups available: ${groups != null ? String.valueOf(groups.size()) : "null"}</p>

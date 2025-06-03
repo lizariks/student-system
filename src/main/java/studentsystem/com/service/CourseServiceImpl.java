@@ -22,7 +22,7 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public Course createCourse(Course course, Teacher teacher) {
-        course.setTeacher(teacher); // assuming Course has a Teacher field
+        course.setTeacher(teacher);
         return courseRepository.save(course);
     }
 
@@ -33,7 +33,6 @@ public class CourseServiceImpl implements CourseService {
             Course course = existing.get();
             course.setName(updatedCourse.getName());
             course.setDescription(updatedCourse.getDescription());
-            // update other fields as needed
             return courseRepository.save(course);
         }
         throw new RuntimeException("Course not found");
